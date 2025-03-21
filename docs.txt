@@ -1,0 +1,8 @@
+JavaScript interacts with the HTML using the Document Object Model, or DOM. 
+The DOM is a tree of objects that represents the HTML. You can access the HTML using the document object, 
+which represents your entire HTML document.
+
+The querySelector() method takes a CSS selector as an argument and 
+returns the first element that matches that selector.
+
+ If you are not going to assign a new value to a variable, it is best practice to use the const keyword to declare it instead of the let keyword. 
