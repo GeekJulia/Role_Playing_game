@@ -6,3 +6,4 @@ The querySelector() method takes a CSS selector as an argument and
 returns the first element that matches that selector.
 
  If you are not going to assign a new value to a variable, it is best practice to use the const keyword to declare it instead of the let keyword. 
+ Always place your script at the end of the page
