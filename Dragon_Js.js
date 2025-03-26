@@ -17,7 +17,11 @@ const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
 const locations = []
-
+const cat = {
+    name: "Whiskers",
+    "Number of Legs" : 4
+};
+console.log(cat)
 function update(location){
 
 }

@@ -29,3 +29,6 @@ Function parameters act as placeholders for values that you pass to the function
 Objects are non primitive data types that store key-value pairs. 
 Non primitive data types are mutable data types that are not undefined, null, boolean, number, string, or symbol. 
 Mutable means that the data can be changed after it is created.
+
+If the property name (key) of an object has a space in it, 
+you will need to use single or double quotes around the name.
