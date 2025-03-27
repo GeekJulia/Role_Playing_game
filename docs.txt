@@ -49,3 +49,7 @@ The second way to access the properties of an object is bracket notation ([]).
 If the property of the object you are trying to access has a space in its name, you will need to use bracket notation.
 Example Code
 objectName["property name"];
+
+Instead of assigning the innerText and onclick properties to specific strings and functions, 
+the update function will use data from the location that is passed into it. 
+First, that data needs to be passed.
