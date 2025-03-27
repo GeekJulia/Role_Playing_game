@@ -16,12 +16,12 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
-const locations = []
-const cat = {
-    name: "Whiskers",
-    "Number of Legs" : 4
-};
-console.log(cat)
+const locations = [
+  {
+    name:"town square",
+    "button text":["Go to store","Go to cave","Fight dragon"]
+  }
+]
 function update(location){
 
 }
