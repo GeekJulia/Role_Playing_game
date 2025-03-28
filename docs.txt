@@ -53,3 +53,7 @@ objectName["property name"];
 Instead of assigning the innerText and onclick properties to specific strings and functions, 
 the update function will use data from the location that is passed into it. 
 First, that data needs to be passed.
+
+Compound assignment
+There is a shorthand way to add or subtract from a variable called compound assignment.
+ For example, changing num = num + 5 to compound assignment would look like num += 5.
