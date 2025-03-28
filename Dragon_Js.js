@@ -95,8 +95,10 @@ function buyWeapon() {
     gold -= 30;
     currentWeaponIndex++;
     goldText.innerText = gold;
-    
-    text.innerText = "You now have a new weapon."
+    let newWeapon = weapons[currentWeaponIndex].name; //name is a key that is inside the array of "weapons" 
+    // and currentWeaponIndex is the index value that will be 
+    // used to access each value of object in the weapons array.
+    text.innerText = "You now have a " + newWeapon + ".";
   }
 }
 function fightSlime(){
