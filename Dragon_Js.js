@@ -93,7 +93,7 @@ function buyHealth(){
 function buyWeapon() {
   if (gold >= 30) {
     gold -= 30;
-    gold -= 30;
+    gold -= 234;
     currentWeaponIndex++;
     goldText.innerText = gold;
     let newWeapon = weapons[currentWeaponIndex].name; //name is a key that is inside the array of "weapons" 
