@@ -91,16 +91,21 @@ function buyHealth(){
  }
 }
 function buyWeapon() {
-  if (gold >= 30) {
-    gold -= 30;
-    currentWeaponIndex++;
-    goldText.innerText = gold;
-    let newWeapon = weapons[currentWeaponIndex].name; //name is a key that is inside the array of "weapons" 
-    // and currentWeaponIndex is the index value that will be 
-    // used to access each value of object in the weapons array.
-    text.innerText = "You now have a " + newWeapon + ".";
-    inventory.push(newWeapon);
-    text.innerText += " In your inventory you have: " + inventory;
+  if(currentWeaponIndex < 3){
+    if (gold >= 30) {
+      gold -= 30;
+      currentWeaponIndex++;
+      goldText.innerText = gold;
+      let newWeapon = weapons[currentWeaponIndex].name; //name is a key that is inside the array of "weapons" 
+      // and currentWeaponIndex is the index value that will be 
+      // used to access each value of object in the weapons array.
+      text.innerText = "You now have a " + newWeapon + ".";
+      inventory.push(newWeapon);
+      text.innerText += " In your inventory you have: " + inventory;
+    }
+    else{
+      text.innerText = "You do not have enough gold to buy a weapon."
+    }
   }
 }
 function fightSlime(){
