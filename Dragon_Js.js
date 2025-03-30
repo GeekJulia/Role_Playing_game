@@ -99,6 +99,7 @@ function buyWeapon() {
     // and currentWeaponIndex is the index value that will be 
     // used to access each value of object in the weapons array.
     text.innerText = "You now have a " + newWeapon + ".";
+    inventory.push(newWeapon);
   }
 }
 function fightSlime(){
