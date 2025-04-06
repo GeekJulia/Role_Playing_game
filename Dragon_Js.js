@@ -179,11 +179,17 @@ function attack(){
     lose()
   }
   else if(monsterHealth <= 0){
-    defeat()
+    defeatMonster()
   }
 }
 function dodge(){
 
+}
+function defeatMonster(){
+
+}
+function dodge(){
+  
 }
 //initialize buttons
 button1.onclick = goStore;
