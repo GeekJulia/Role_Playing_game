@@ -35,6 +35,8 @@ const weapons = [
   }
 ];
 
+
+
 const locations = [
   {
     name:"town square",
@@ -75,9 +77,6 @@ function goStore() {
 
 function goCave(){
     update(locations[2]);
-}
-function fightDragon(){
-    console.log("Fighting dragon.");
 }
 function buyHealth(){
  if(gold >= 10){
@@ -120,6 +119,11 @@ function sellWeapon(){
     goldText.innerText = gold
 
     let currentWeapon = inventory.shift();
+    text.innerText = "You sold a " + currentWeapon + "."
+    text.innerText = " In your inventory you have: "+ inventory
+  }
+  else{
+    text.innerText = "Don't sell your only weapon!"
   }
 }
 function fightSlime(){
@@ -128,6 +132,13 @@ function fightSlime(){
 function fightBeast(){
 
 }
+function fightDragon(){
+  console.log("Fighting dragon.");
+}
+function goFight(){
+
+}
+
 //initialize buttons
 button1.onclick = goStore;
 button2.onclick = goCave;
