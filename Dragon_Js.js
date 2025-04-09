@@ -85,7 +85,16 @@ const locations = [
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
   }
 ]
+
+  //initialize buttons
+  button1.onclick = goStore;
+  button2.onclick = goCave;
+  button3.onclick = fightDragon;
+
 function update(locations){
+
+    monsterStats.style.display = "none"
+
     button1.innerText = locations["button text"][0];
     button2.innerText = locations["button text"][1];
     button3.innerText = locations["button text"][2];
@@ -201,7 +210,3 @@ function defeatMonster(){
 function dodge(){
   text.innerText = "You dodge the attack from the " + monsters[fighting].name + "."
 }
-//initialize buttons
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
