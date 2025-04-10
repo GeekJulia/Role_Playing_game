@@ -91,3 +91,9 @@ Here is an example of updating the content for this paragraph element using the 
 
 <p id="demo">This is a paragraph.</p>
 document.querySelector("#demo").innerHTML = "Hello, innerHTML";
+
+//const hit = (level * 5) - (Math.floor(Math.random() * xp)); ==> This will set the monster's attack to five 
+times their level minus a random number between 0 and the player's xp.
+
+The ternary operator is a conditional operator and can be used as a one-line if-else statement. 
+The syntax is: condition ? expressionIfTrue : expressionIfFalse.
