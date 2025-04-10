@@ -84,3 +84,10 @@ The word "Arg!" should have quotes around it. Besides escaping quotes, there
 is another way you can include quotation marks inside a string.
 Change the double quotes around the string "The monster screams Arg! as it dies. 
 You gain experience points and find gold." to single quotes ', then add double quotes around "Arg!".
+
+In order for the &#x2620; emoticon text to properly display on the page, you will need to use the innerHTML property.
+The innerHTML property allows you to access or modify the content inside an HTML element using JavaScript.
+Here is an example of updating the content for this paragraph element using the innerHTML property.
+
+<p id="demo">This is a paragraph.</p>
+document.querySelector("#demo").innerHTML = "Hello, innerHTML";
