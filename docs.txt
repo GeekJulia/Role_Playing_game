@@ -99,3 +99,15 @@ The ternary operator is a conditional operator and can be used as a one-line if-
 The syntax is: condition ? expressionIfTrue : expressionIfFalse.
 The logical OR operator will use the first value if it is truthy – that is, anything apart from NaN, null, 
 undefined, 0, -0, 0n, "", and false. Otherwise, it will use the second value.
+
+for loops are declared with three expressions separated by semicolons: for (a; b; c), 
+where a is the initialization expression, b is the condition, and c is the final expression
+
+The .includes() method determines if an array contains an element and will return either true or false.
+Here is an example of the .includes() syntax:
+Example Code
+const numbersArray = [1, 2, 3, 4, 5]
+const number = 3
+if (numbersArray.includes(number)) {
+  console.log("The number is in the array.")
+}
