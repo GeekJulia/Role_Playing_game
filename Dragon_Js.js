@@ -218,6 +218,10 @@ function attack(){
       defeatMonster()
     }
   }
+  if(Math.random() <= .1 && inventory.length !== 1){
+    text.innerText += " Your " + inventory.pop() + " breaks."
+    currentWeaponIndex--;
+  }
 }
 
 function getMonsterAttackValue(level) {
@@ -226,7 +230,7 @@ function getMonsterAttackValue(level) {
   return hit > 0 ? hit : 0
 }
 function isMonsterHit(){
-  return(Math.random() > .2)
+  return Math.random() > .2 || health < 20
 }
 function dodge(){
   text.innerText = "You dodge the attack from the " + monsters[fighting].name + "."
@@ -258,4 +262,16 @@ function restart(){
   healthText.innerText = health
   xpText.innerText = xp
   goTown()
+}
+function easterEgg(){
+  update(locations[7])
+}
+function pickTwo(){
+  pick(2)
+}
+function pickEight(){
+  pick(8)
+}
+function pick(guess){
+
 }

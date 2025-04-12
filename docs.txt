@@ -97,3 +97,5 @@ times their level minus a random number between 0 and the player's xp.
 
 The ternary operator is a conditional operator and can be used as a one-line if-else statement. 
 The syntax is: condition ? expressionIfTrue : expressionIfFalse.
+The logical OR operator will use the first value if it is truthy – that is, anything apart from NaN, null, 
+undefined, 0, -0, 0n, "", and false. Otherwise, it will use the second value.
