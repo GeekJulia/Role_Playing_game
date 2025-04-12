@@ -1,4 +1,4 @@
-let xp,currentWeaponIndex = 0;
+let xp=0,currentWeaponIndex = 0;
 let health = 100;
 let gold = 50;
 let fighting,monsterHealth;
@@ -109,19 +109,19 @@ const locations = [
   button2.onclick = goCave;
   button3.onclick = fightDragon;
 
-function update(locations){
+function update(location){
 
     monsterStats.style.display = "none"
 
-    button1.innerText = locations["button text"][0];
-    button2.innerText = locations["button text"][1];
-    button3.innerText = locations["button text"][2];
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
 
-    button1.onclick = locations["button functions"][0];
-    button2.onclick = locations["button functions"][1];
-    button3.onclick = locations["button functions"][2];
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
 
-    text.innerHTML = locations.text;
+    text.innerHTML = location.text;
 }
 function goTown() {
     update(locations[0]);
@@ -144,6 +144,7 @@ function buyHealth(){
   text.innerText = "You do not have enough gold to buy health.";
  }
 }
+
 function buyWeapon() {
   if(currentWeaponIndex < weapons.length - 1){
     if (gold >= 30) {
@@ -159,12 +160,12 @@ function buyWeapon() {
     }
     else{
       text.innerText = "You do not have enough gold to buy a weapon."
-      button2.innerText = "Sell weapon for 15 gold"
-      button2.onclick = sellWeapon()
     }
   }
   else{
     text.innerText = "You already have the most powerful weapon!";
+    button2.innerText = "Sell weapon for 15 gold"
+    button2.onclick = sellWeapon()
   }
 }
 
@@ -175,7 +176,7 @@ function sellWeapon(){
 
     let currentWeapon = inventory.shift();
     text.innerText = "You sold a " + currentWeapon + "."
-    text.innerText = " In your inventory you have: "+ inventory
+    text.innerText += " In your inventory you have: "+ inventory
   }
   else{
     text.innerText = "Don't sell your only weapon!"
@@ -217,7 +218,7 @@ function attack(){
     lose()
   }
   else if(monsterHealth <= 0){
-    if(fighting === 0){
+    if(fighting === 2){
       winGame()
     }
     else{
